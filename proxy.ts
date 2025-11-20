@@ -6,7 +6,7 @@ import { NextResponse } from 'next/server';
 +// > TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received null
 +// errors. To workaround this issue we set HOME to an empty string. We still won't be able to load any local
 +// configuration files, but at least logic that determines paths to attempt to load won't throw anymore.
-+process.env.HOME = "";
+process.env.HOME = "";
 
 
 export async function proxy() {
